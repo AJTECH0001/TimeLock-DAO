@@ -34,18 +34,3 @@ or, equivalently, you can install directly from this repository
 npm install https://github.com/HarmonicLabs/plu-ts
 ```
 
-## Get started
-
-Have a look at the [`plu-ts` documentation](https://pluts.harmoniclabs.tech) where you can find some [example projects](https://pluts.harmoniclabs.tech/examples/Hello%20World) to help you get started.
-
-## Sponsors ❤️
-
-the [sponsors.md](./sponsors.md) file contains a list of supportes of this project.
-
-Every one of them is special and is contributing to making this software available for everyone.
-
-Consider having a look at the [documentation]([https://www.harmoniclabs.tech/plu-ts-docs/index.html](https://pluts.harmoniclabs.tech)) even if it is currently being written; feel free to contribute to the [`plu-ts-docs` repository](https://github.com/HarmonicLabs/plu-ts-docs)
-
-## Project Catalyst
-
-a collection of all proposals made in the past is in the [```catalyst-proposals.md```](./catalyst-proposals.md) file
