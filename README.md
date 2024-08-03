@@ -1,4 +1,4 @@
-# Timelock Contract DAO for Cardano Hackathon
+# Timelock Contract DAO for Cardano Blockchain
 
 ## Overview
 
