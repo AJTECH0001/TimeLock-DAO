@@ -1,36 +1,36 @@
-<p align="center">
-  <img width="100px" src="./assets/logo/plu-ts.svg" align="center"/>
-  <h1 align="center">plu-ts</h1>
-  <p align="center">An embedded DSL for Cardano smart contracts creation coupled with a library for Cardano transactions, all in Typescript</p>
+# Timelock Contract DAO for Cardano Hackathon
 
-  <p align="center">
-    <img src="https://img.shields.io/github/commit-activity/m/harmonicpool/plu-ts?style=for-the-badge" />
-    <a href="https://twitter.com/hlabs_tech">
-      <img src="https://img.shields.io/twitter/follow/hlabs_tech?style=for-the-badge&logo=twitter" />
-    </a>
-    <a href="https://twitter.com/MicheleHarmonic">
-      <img src="https://img.shields.io/twitter/follow/MicheleHarmonic?style=for-the-badge&logo=twitter" />
-    </a>
-  </p>
-</p>
+## Overview
 
-## what is plu-ts?
+### This repository contains the Plutus script for a time-locked transaction contract, designed for use on the Cardano blockchain. The contract provides a mechanism for queuing and executing transactions after a specified delay, with built-in access control and error handling.
 
-`plu-ts` is a library to allow Cardano-related software to be written entirely in [typescript](https://www.typescriptlang.org/), in support for a wider developer ecosystem adoption and easier integration.
+## Dependencies
+@harmoniclabs/plu-ts: A TypeScript library for writing Plutus smart contracts.
 
-the project is composed mainly of two parts: on-chain and off-chain;
+## Installation
 
-the on-chain exports all the necessary for you to build your smart contract as an eDSL (_embedded_ Domain Specific Language)
-the off-chain one allows you to build transactions 
+### git clone https://github.com/AJTECH0001/TimeLock-DAO.git
 
-## Install
+To install the required dependencies, run the following command in your project directory:
 
-You can start playing with `plu-ts` by running the following command in your project root directory
-```
-npm install @harmoniclabs/plu-ts
-```
-or, equivalently, you can install directly from this repository
-```
-npm install https://github.com/HarmonicLabs/plu-ts
-```
+### npm install @harmoniclabs/plu-ts
+
+## Contract Functionality
+
+Queueing Transactions: Allows authorized users to queue transactions with a specified delay.
+Executing Transactions: Enables the execution of queued transactions after the delay period has passed.
+Cancelling Transactions: Provides a mechanism for cancelling queued transactions.
+Access Control: Ensures only authorized users can queue, execute, or cancel transactions.
+Error Handling: Implements error handling for various scenarios like invalid timestamps, transaction not found, etc.
+
+## Potential Use Cases
+DAO governance: Time-locked proposals for DAO decisions.
+Escrow services: Holding funds until specific conditions are met.
+Automated tasks: Scheduling recurring tasks on the blockchain.
+
+## Future Improvements
+Security Audits: Conduct thorough security audits to identify and address potential vulnerabilities.
+Gas Optimization: Optimize the contract for gas efficiency.
+Additional Features: Explore adding features like multi-signature approvals or more complex transaction conditions.
+
 
